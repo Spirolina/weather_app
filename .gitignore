@@ -1,1 +1,3 @@
-./src/apiKeys.js
+apiKeys.js
+/node_modules
+/.vscode
