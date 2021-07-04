@@ -1,0 +1,7 @@
+const API_GIF_KEY = 'p5FtoB5EJ1IP2hwvUesxEAzgub5QYDUL';
+const API_WEATHER_KEY = 'b993c06094bb828cb043510c851880db';
+
+export default {
+  GIF: API_GIF_KEY,
+  WEATHER: API_WEATHER_KEY,
+};
