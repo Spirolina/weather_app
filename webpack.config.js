@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+
 module.exports = {
   mode: 'development',
   entry: {
@@ -24,10 +25,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
-      },
-      {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
         type: 'asset/resource',
         
@@ -40,7 +37,16 @@ module.exports = {
           name:'[name].[ext]',
          
         }
-      }
+      },
+      {
+        test: /\.scss$/,
+        exclude: /node_modules/, 
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader']
+      },
+      { 
+        test: /\.css$/, 
+        use: ['style-loader', 'css-loader', 'postcss-loader'] 
+      },
     ],
   },
 };

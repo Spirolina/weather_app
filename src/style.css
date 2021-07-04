@@ -52,8 +52,7 @@ img{
   height: 50px;
 }
  
-.board::-webkit-scrollbar-track {
-}
+
  
 .board::-webkit-scrollbar-thumb {
   background-color: rgba(255, 99, 71, 0.514);
