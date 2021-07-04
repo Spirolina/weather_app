@@ -68,7 +68,8 @@ export default class UI {
 
     Weather.fetchWeather(value).catch(() => {
       input.classList.add('error');
-      input.value = 'please enter a valid name';
+      input.value = '';
+      input.setAttribute('placeholder', 'please enter a valid name');
       input.addEventListener('focus', () => {
         input.classList.remove('error');
       });
