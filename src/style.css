@@ -148,7 +148,7 @@ left: 50%;
   pointer-events: painted;  
   
 }
-.btn-search:focus  .input-search{
+.btn-search:focus ~ .input-search{
   width: 300px;
   border-radius: 0px;
   background-color: rgba(71, 243, 255, 0.658);
